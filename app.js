@@ -10,4 +10,9 @@ app.get('/api', (req, res) => {
   });
 });
 
+app.post('/api/posts/', (req, res) => {
+  res.json({
+    message: 'Post created...' 
+  });
+})
 app.listen(port, () => console.log('Server started on port 5000'));
